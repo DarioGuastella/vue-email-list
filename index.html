@@ -13,10 +13,12 @@
         <div v-if="emails.length == 10">
         <ul>
             <li v-for="email in emails">{{email}}</li>
+            
         </ul>
         </div>
         <div v-else>
             <h3>Attendere</h3>
+            <button @click="generaEmails">Genera Lista Emails</button>
         </div>
     </div>
     <script src="main.js"></script>

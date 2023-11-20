@@ -17,8 +17,8 @@
         </ul>
         </div>
         <div v-else>
-            <h3>Attendere</h3>
-            <button @click="generaEmails">Genera Lista Emails</button>
+            <h3 v-show="!toggle">Attendere</h3>
+            <button v-show="toggle" @click="generaEmails();loading()">Genera Lista Emails</button>
         </div>
     </div>
     <script src="main.js"></script>

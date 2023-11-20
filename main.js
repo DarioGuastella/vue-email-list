@@ -3,7 +3,8 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
-            emails: []
+            emails: [],
+            toggle: true
         }
         
     },
@@ -16,7 +17,10 @@ createApp({
                         this.emails.push(resp.data.response);
                     }
                 });}
-            }
+            },
+        loading(){
+            this.toggle = !this.toggle
+        }
     },
     mounted() {
 

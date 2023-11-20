@@ -9,9 +9,15 @@
 </head>
 <body>
     <div id="app">
+        <h1>Lista email generata tramite API:</h1>
+        <div v-if="emails.length == 10">
         <ul>
             <li v-for="email in emails">{{email}}</li>
         </ul>
+        </div>
+        <div v-else>
+            <h3>Attendere</h3>
+        </div>
     </div>
     <script src="main.js"></script>
 </body>
